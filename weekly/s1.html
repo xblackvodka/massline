@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Statement On The Pyongyang Apartment Collapse</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #ED3237;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other divs~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	overflow: hidden; /* this declaration makes the .container understand where the floated columns within ends and contain them */
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the right instead of the left, simply float these columns the opposite direction (all right instead of all left) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+.sidebar1 {
+	float: left;
+	width: 180px;
+	background-color: #FFFFCC;
+	padding-bottom: 10px;
+}
+.content {
+
+	padding: 10px 0;
+	width: 600px;
+	float: left;
+}
+.sidebar2 {
+	float: left;
+	width: 180px;
+	background-color: #FFFFCC;
+	padding: 10px 0;
+	font-size: 14px;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+	background-color: #CCCCCC;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background-color: #FFFFCC;
+	color: #FFF;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+body,td,th {
+	font-family: "Times New Roman", Times, serif;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="../default.html">Central Page</a></li></ul>
+  </div>
+  <div class="content">
+    <p>MONDAY, MAY <em>19<sup>th</sup></em>, <em>2014</em></p>
+    <h1><em><font color="#ED3237"><a name="top" id="top"></a>Statement</font></em> | On The Pyongyang Apartment Collapse</h1>
+    <p><font size="2">WRITTEN by FENG HUANG aka IRON PHOENIX</font></p>
+    <p>On May <em>13<sup>th</sup></em>, <em>2014</em>, an apartment building collapsed in Phyongchon district, Pyongyang, crushing hundreds to death, bereaving hundreds of Korean families. </p>
+    <p>Firstly, let me offer my deepest and most heartfelt condolences to <em>all</em> Koreans in their time of mourning and loss. Secondly, let me say this: Forgiveness is deserved by any entity, if it makes an apology, makes reparations, and works to correct its behaviour. If the NK government launches an honest national inquiry into safety and design regulations regarding the construction and upkeep of residential property, and works to correct its errors, let it be forgiven.</p>
+    <p>The DPRK reported this <a href="http://kcna.co.jp/item/2014/201405/news18/20140518-05ee.html" target="_blank">via KCNA</a>, taking responsibility for the collapse, and offering its &ldquo;profound apologies and consolation&rdquo;. Since then, I’ve seen Jucheists defend the NK government by arguing that when bridges collapse in AmeriKKKa, it is no fault of the government, so why criticize the government of North Korea for an apartment collapse? Fortunately, their fallacy in logic is clear: the government of AmeriKKKa <em>is</em> at fault for the collapse of bridges, because the regulation of bridge construction is overseen by the government at <a href="http://www.fhwa.dot.gov/Bridge/management/index.cfm" target="_blank">the federal level</a>. And it is not as if buildings collapse because of missing nails, no <em>– </em> buildings collapse due to structural design flaws, which a WPK officer acknowledged in a public statement issued to grieving families, widows and orphans.</p>
+    <p>The response to the KCNA report by the largely Internet-based First-Worldist &ldquo;movement&rdquo; is appaling, but not shockingly so. After all, the people here absolving the NK government of all responsibility for this fatal mismanagement are the same people who champion to defend the Kim dynasty for all of its anti-communist practices. It was only last month that KCNA expressed disgust for homosexuality in <a href="http://www.kcna.co.jp/item/2014/201404/news22/20140422-02ee.html" target="_blank">one of its news reports</a>, the tank-Jucheists shouting down the unbelievers as &ldquo;bad Marxists&rdquo; and &ldquo;racists&rdquo;. At every possible opportunity, the tank-Jucheist asks, &ldquo;how can DPRK be so bad, when they love their dear leaders so&rdquo;?    </p>
+    <p>This is backwards, non-Marxist, and metaphysical thinking, a cage of the mind that prevents people from perceiving  reality. It is a real roadblock to real revolutionary work.    </p>
+    <p><strong>Oppose DPRK worship and metaphysical Marxism!</strong></p>
+    <p><strong>Down with the sectarianism of the dogmato-revisionist First-Worldist Juche clique!    </strong>    </p>
+    <p><strong>Long live the beautiful, Korean people!</strong></p>
+    <p>&nbsp;</p>
+  </div>
+  <div class="sidebar2">
+    <h4><font size="1"><font face="Verdana"></font></font><center><img src="pictures/FlagofDPRK.png" width="120" height="60" /></center></h4>
+  </div>
+  <!-- end .container --></div>
+</body>
+</html>

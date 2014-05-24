@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IRON PHOENIX Weekly, Issue #1 | Revolution In The Core: Vanguardizing The Lumpenproletariat, Triggering Class Dysphoria</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #ED3237;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other divs~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	overflow: hidden; /* this declaration makes the .container understand where the floated columns within ends and contain them */
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the right instead of the left, simply float these columns the opposite direction (all right instead of all left) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+.sidebar1 {
+	float: left;
+	width: 180px;
+	background-color: #FFFFCC;
+	padding-bottom: 10px;
+}
+.content {
+
+	padding: 10px 0;
+	width: 600px;
+	float: left;
+}
+.sidebar2 {
+	float: left;
+	width: 180px;
+	background-color: #FFFFCC;
+	padding: 10px 0;
+	font-size: 14px;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+	background-color: #CCCCCC;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background-color: #FFFFCC;
+	color: #FFF;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+body,td,th {
+	font-family: "Times New Roman", Times, serif;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="../weekly.html">Index</a></li></ul>
+  </div>
+  <div class="content">
+    <p>FRIDAY, MAY <em>16<sup>th</sup></em>, <em>2014</em></p>
+    <h1><em><font color="#ED3237"><a name="top" id="top"></a>Issue #1</font></em> | Revolution In The Core: Vanguardizing The Lumpenproletariat, Triggering Class Dysphoria</h1>
+    <p><font size="2">WRITTEN by FENG HUANG aka IRON PHOENIX</font></p>
+    <p>Originally, I advocated a revolution of the First World, whereby First World workers seize control over the means of production and march towards a socialist workers’ state. And now, I realize the revolutionary situation in Kanada is not the revolutionary situation in Tsarist Russia. I feel historically and materially aware, whereas before, I was stuck in the First-Worldist, settlerist mindset...    </p>
+    <p><strong>What I’ve realized:</strong></p>
+    <ul>
+      <li>First World workers (a majority of whom are White) are embourgeoisified. </li>
+      <li>A majority of the productive forces are in the Third World, not in the First World. </li>
+      <li>The land and productive forces of the First World do not belong to European workers.</li>
+    </ul>
+    <p>Many Whites in Klanada do not realize that the country is ‘<a href="popups/swag.html" onclick="javascript:void window.open('popups/swag.html','1399902771754','width=500,height=100,toolbar=0,menubar=1,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">swag</a>’. If they do, they don’t care. That’s because the majority of Whites in Klanada do not form a proletariat. Rather, they form an aristocracy of labour, a class of power grown out of <em>500</em> years of colonialism and genocide. When I say a &ldquo;class of power&rdquo;, I mean a class of privilege. Officially, slavery is abolished. But politically, economically, socially, culturally—the non-White nation is weighed down, held back by the White. This has been the case since the White man first arrived here. We colonized a labour force, brought in migrant workers from afar; The White man stood upon the backs of his slaves as pillars to his dominance were erected. We are standing upon them today.    </p>
+    <p>If not the Euro-settler labour aristocracy, then who are the proletariat?</p>
+    <p>Up north, we’re not known for our slaying of Afrikans, but of the <a href="popups/onkwehonwe.html" onclick="javascript:void window.open('popups/onkwehonwe.html','1399902771754','width=500,height=100,toolbar=0,menubar=1,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">Onkwehón:we</a>. Klanada’s campaign of genocide against the Indigenous peoples has never truly ended. Over a hundred million of them died building capitalism’s headquarters on their land; As recently as the 1960’s, the government has orchestrated the systematic murder of Indigenous<sup>[<a href="http://www.defence.lk/new.asp?fname=Canadas_hypocrisy_on_Human_Rights_and_Commonwealth_funding_20140419_01" target="_blank">1</a>]</sup>. In 2007, a 9-year-old living in a northern Ontario land reservation committed suicide<sup>[<a href="http://www.thestar.com/news/2007/02/07/kashechewan_a_community_in_crisis.html" target="_blank">2</a>]</sup>. If <em>all</em> culture <em>is </em>history, and <em>all</em> history <em>is </em>culture, <em>all</em> of our hitherto culture is a history of racism and oppression. By destroying Indigenous culture, we have created a racist and oppressive &ldquo;<a href="popups/klanadianism.html" onclick="javascript:void window.open('popups/klanadianism.html','1399902771754','width=500,height=100,toolbar=0,menubar=1,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">Canadian</a>&rdquo; culture.</p>
+    <p>Historically, the proletariat are the Onkwehón:we<sup>[<a href="popups/historicallyprole.html" onclick="javascript:void window.open('popups/historicallyprole.html','1399902771754','width=500,height=100,toolbar=0,menubar=1,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">?</a>]</sup>.</p>
+    <p>We are living above a mass grave, upon stolen land, amidst structures built by stolen labour. Thus, true justice is inconceivable till <em>all</em> land and property is returned to the only people who have the ecological right to call this place their motherland: the Onkwehón:we. If we were to be forced to return to Europe by raft, it’d be an act of grace in comparison to the torment they’ve suffered because of our indifference. Their revolution is long overdue.</p>
+    <p>Whereas White KKKanada has refused, the rising Onkwehón:we nations <a href="http://onkwehonwerising.wordpress.com/" target="_blank">are answering</a> history&rsquo;s call to make revolution. The time for national liberation is at hand, and we can choose to side with them... or perish, physically or in spirit.</p>
+    <p>Inspired by the struggle of the Onkwehón:we nations, I began to challenge my settlerism...</p>
+    <h3><em>Beyond The Settlerist Mentality: A Single Step Became One Great Leap</em></h3>
+    <p>Race is structural, an historical and materialist construct. <a href="popups/racismis.html" onclick="javascript:void window.open('popups/racismis.html','1399902771754','width=400,height=150,toolbar=0,menubar=1,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">Racism is ignorance plus power</a>.</p>
+    <p>My ex-girlfriend’s best friend is  ‘<a href="popups/rez.html" onclick="javascript:void window.open('popups/rez.html','1399902771754','width=500,height=100,toolbar=0,menubar=1,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">rez</a>’, thus tax-exempt. When she informs a White employee of this, they recoil. This racism is blatant, even among the so-called &ldquo;leftists&rdquo; who argue that &ldquo;multiculturalism&rdquo; in this country has &ldquo;gone too far&rdquo;, and too many  &ldquo;privileges&rdquo; are given to Onkwehón:we. Conveniently, they are forgetting that we owe them a massive debt, and that<em> 70%</em><sup>[<a href="http://www41.statcan.gc.ca/2007/10000/ceb10000_003-eng.htm" target="_blank">3</a>]</sup> of Onkwehón:we <em>do not</em> live on land reservations and thus, <em>pay</em> federal taxes. But, this is the settlerist mentality: A racist sense of false-entitlement and an ignorance of White history.</p>
+    <p>And what &ldquo;privileges&rdquo; do we give to them, really? Exclusive membership cards to the poorest communities in the country? Death squads? Cultural and religious persecution?    </p>
+    <p>It is the White man who has too many privileges.</p>
+    <p>I believe that the diversity of my family and upbringing, and the poverty I’ve experienced and witnessed growing up in a Black community has developed my political consciousness of this. </p>
+    <p>Here is my first, major self-criticism: I dogmatically adhered to doctrine written in Lenin’s time, blinding myself to the material reality and the revolutionary situation in KKKanada.</p>
+    <p>Not too long ago, I identified myself as a Marxist–Leninist. Over time, I began to uncover the ideological bankruptcy in Marxism–Leninism. This discovery was due in part to my honest historical-materialist analysis of the U.S.S.R. Beginning to realize the partialness of Leninism, my next step was Maoism. &ldquo;Is Maoism more wholesome?&rdquo;, I asked. Since the early 1960’s, Maoism has been prominent in the First World revolutionary movement, so why has it failed? Honest historical-materialist analysis again led me to question my trajectory. And finally, I was introduced to the movement to &ldquo;unite real friends against real enemies&rdquo;: the movement of Maoism Third-Worldism. Thoroughly convinced of its revolutionary potential, I have fully embraced it. It has given me a less abstract, more concrete view of society and its history.</p>
+    <p>It has led me out of the dark of the backwards First-Worldist mindset.</p>
+    <p>Only three nations now have a developed revolutionary social base capable of defeating capitalist-imperialism and building socialism and communism: India, the Philippines, and Nepal. These are mass movements, characterized by united fronts, popular fronts, and mass line. The so-called &ldquo;communist movement&rdquo; in Ukraine is characterized by transphobic, homophobic pro-Putin political lines of Russian exceptionalism. The rest of the First-Worldist movement is stagnating, and White-dominated. Only Maoism Third-Worldism is capable of defeating capitalist-imperialism and building world socialism and world communism.</p>
+    <p><strong>Maoism Third-Worldism is, in essence:</strong></p>
+    <ul>
+      <li>Denial of a White proletariat.</li>
+      <li>Global Black, Brown, Yellow, Red, and revolutionary White solidarity.</li>
+    </ul>
+    <p><strong>What Maoism Thirld-Worldism<em> is not</em>:</strong></p>
+    <ul>
+      <li>The promotion of the racial supremacy of non-White peoples.</li>
+      <li>Denial of First World revolution. </li>
+    </ul>
+    <h2><a name="thirdworldophobia" id="thirdworldophobia"></a>Thirdworldophobia</h2>
+    <p>Let us first and foremost declare that &ldquo;no investigation means no right to speak&rdquo;. Has the First-Worldist ‘<a href="popups/movementinplace.html" onclick="javascript:void window.open('popups/movementinplace.html','1399902771754','width=500,height=100,toolbar=0,menubar=1,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">movement-in-place</a>’ made a revolutionary class analysis in their investigation? They reject Third-Worldism as &ldquo;racist&rdquo; sectarianism, and dogmatically declare that class burns race. This is incorrect. Third-Worldism is not and cannot be &ldquo;racist&rdquo; or sectarian, and we declare that empirically <em>and</em> materially, race has burned class! We cannot rely solely on Marx’s definition in making a revolutionary class analysis; We rely on Mao Zedong’s wisdom as well, and Engels’ classic works.</p>
+    <p>Comrade Mao wrote, in 1933<sup>[<a href="https://www.marxists.org/reference/archive/mao/selected-works/volume-1/mswv1_8.htm" target="_blank">4</a>]</sup>:</p>
+    <blockquote>&ldquo;Workers make their living wholly or mainly by selling their labour-power.&rdquo;</blockquote>
+    <p>Earlier, in 1847<sup>[<a href="https://www.marxists.org/archive/marx/works/1847/11/prin-com.htm" target="_blank">5</a>]</sup>, Friedrich Engels wrote:</p>
+    <blockquote>&ldquo;The proletariat is that class in society which lives entirely from the sale of its labour and does not draw profit from any kind of capital; Whose weal and woe, whose very life and death, whose sole existence depends entirely on the demand for labour.&rdquo;</blockquote>
+    <p>Maoism Third-Worldism does not deny that there exist White workers, or even that there exist White <em>proletarians</em>. It does deny the existence of a White <em>proletariat</em>. That, collectively, White Klanadian and White Ameriklan workers form a class of labour nobility; more concerned about iPhones, cigarettes, and lottery tickets than revolution. The portion of the gross domestic product  made by the service industry is <em>70%</em>, whereas industry and agriculture are <em>28%</em> and <em>2%</em> respectively<sup>[<a href="https://www.cia.gov/library/publications/the-world-factbook/fields/print_2012.html" target="_blank">6</a>]</sup>. What means of production exist? What class struggle exists?</p>
+    <blockquote>
+      <p>The class struggle is the antagonism existing between social groups over their relationships to the means of producing and distributing economic value. <br />
+      The proletariat controls no means, owns nothing but its labour-power, which it is forced to sell to survive. Because they stand to gain by withdrawing their labour and fighting for control over means, the proletariat is the revolutionary group. Identifying the proletariat is critical to making revolution.    </p>
+    </blockquote>
+    <p>In my analysis,  the First-Worldists have no right to speak, for they have made no investigation.</p>
+    <p>In AmeriKKKa, <em>46%</em> of workers invested in a 401K workplace retirement plan, and thus, are earning a profit from capital. In other words, <em>46%</em> of Amerikans do not depend entirely on the demand for labour to live. Further analysis of the remaining <em>44%</em> divides it into an unemployed reserve army, minority groups, lumpenproletarians, immigrant workers, &ldquo;illegal migrants&rdquo;, etc. <em>This </em>is the true proletariat of North AmeriKKKa! <em>Not</em> the hegemonic White labour nobility! The proletariat is on the streets and behind bars, the captive and disenfranchised nations demanding respect for their humanity. A <em>proletariat</em> is not merely the working-class.</p>
+    <p>And it is not the class of White worker-economists demanding  a higher imperialist rent.    </p>
+    <h3><em>Power Is Fearful Of Demise: White Power, Means White Fear</em></h3>
+    <p>A few months ago, reactionary media began to report about a 9-year-old White boy who allegedly hanged himself due to &ldquo;racist bullying&rdquo;<sup>[<a href="http://www.dailymail.co.uk/news/article-2283777/Boy-9-hanged-bullied-white.html" target="_blank">7</a>]</sup>. This type of reactionary reporting from the White Power structure is disingenuous and racist-in-itself. Racialized violence against non-Whites is an everyday affair, from the fatal shooting of Trayvon Martin to the hundreds of mass slaying by the bourgeoisie’s FBI or RCMP agents. And though I can safely say that I’ve never experienced racism in my life, my Onkwehón:we and Afrikan comrades tell me of their constant struggle with it, choked by the oppressive black gauntlet of White Power. </p>
+    <p>It’s safe to say that capitalist-imperialism is a concentration camp, a product of colonialism and racialism. In fact, it’d be safe to say that non-Whites are racialized peoples, whereas Whites are non-racialized people. Due to mass appeal, any report of anti-White &ldquo;racism&rdquo; is exaggerated, downplaying the daily struggles of the racialized nations. This type of reporting promotes an alarmist, ignorant response from Whites; Our forefathers <em>invented</em> the concept of ethno-nationalism, using Casta systems, in order to conquer, suppress and dominate.</p>
+    <blockquote>To deny the structure of racism, to believe in a racism-in-reverse, is to believe that racism is a part of human nature and race is a part of human taxonomy.    </blockquote>
+    <p>The suicide rate for Onkwehón:we in Klanada is <em>24 per 100,000</em>; The national rate is <em>2<sup>x</sup></em> less at <em>12 per 100,000</em><sup>[<a href="http://www.ahf.ca/downloads/suicide.pdf" target="_blank">8</a>]</sup>. It is a tragedy for the family that this young boy killed himself, but it is not a matter of national emergency. The fact that racialized minorities grow up nationally and culturally dysphoric is a side-effect to the White nation’s destruction of their cultural and national identity. It is as if, after <em>500</em> years of abuse, the ‘<a href="popups/dog.html" onclick="javascript:void window.open('popups/dog.html','1399902771754','width=500,height=100,toolbar=0,menubar=1,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">dog</a>’ is biting back. </p>
+    <p>But, who are the real animals? The real savages are the pig police agents of White Power.</p>
+<h2><a name="blackpowerequalsredpowerplusbluepower" id="blackpowerequalsredpowerplusbluepower"></a>Black Power Equals Red Power Plus Blue Power</h2>
+    <p>In Klanada, the Onkwehón:we nation is under attack by the fascistic, police-gangsterism of the Racist Canadian Mountain Pigs. A parallel can be drawn between their conditions and many other conditions of national oppression worldwide. One such line can be drawn between Onkwehón:we communities and Black communities in the United $naKKKes of Amerika.</p>
+    <p>Down below, the captive Afrikan nation is under attack by the Fascist Bureau of Intimidation. It is a history of struggle, Peruvian cocaine, ghettoization, and anti-communalism.</p>
+    <p>Black communities are plagued by brutal turf warfare furthering their national self-destruction. Wars organized by rival  &ldquo;gangs&rdquo; made up of struggling, poverty-stricken youth. Wars that pale in comparison to the chilling atrocities organized and overseen by White AmeriKKKa against the peoples of the Third World, such as the atrocities committed at Abu Ghraib or Fallujah. We know the War on Drugs was a War on Black Power. We know that pig police exist to divide and conquer, not protect and serve. We know that Ameriklan policing is a genocide, not a civil service. The state is immune to persecution. The Black man is lucky to escape the grave. Last week, two dozen police officers stood and fired <em>377 </em>rounds at a vehicle they pursued, killing the unarmed driver and passenger inside<sup>[<a href="https://www.commondreams.org/further/2014/05/13" target="_blank">8</a><a href="http://www.dailymail.co.uk/news/article-2283777/Boy-9-hanged-bullied-white.html" target="_blank"></a>]</sup>. Systematic murder is a daily affair<em></em>. For countless Black families, every new dawning is mourning in AmeriKKKa. Is this justice? No!</p>
+    <p>&ldquo;Justice&rdquo; is just the state’s codeword for genocide. True justice is self-determination. </p>
+    <p>This is the reality of Ameriklan &ldquo;justice&rdquo;. If Blacks defend their people and their communities from genocide, they face execution; If pig police slay Blacks, they attend award ceremonies.</p>
+    <p>Why the indifference? Why not stand up and make revolution, White AmeriKKKa?</p>
+    <p>This is precisely the historical call to arms that White AmeriKKKa has refused, and that the rising, new Afrikan nation has answered. Enough is enough! From a moral standpoint, captive nations are not committing a crime when they kill or thieve, because this is an occupied land, and thus, the occupiers’ politico-legal systems are unlawful by design. Until the stolen land and property is returned to its rightful owners, true justice is liberation or retribution.</p>
+    <p>Again, the time for a revolution is long overdue. The time for national liberation is at hand.</p>
+    <h3><em>&ldquo;Here We Go Again!&rdquo;, &ldquo;Same Old Shit Again!&rdquo;, &ldquo;Fuck The Police!&rdquo; </em></h3>
+    <p>Recently, an Afrikan comrade of mine introduced me to a new Black Power movement.</p>
+    <p>The New Generation of the Black Panther Party for Self-Defence, commonly known as the <a href="http://2servethapeople.wix.com/brlp" target="_blank">Black Riders Liberation Party</a> is a revolutionary Black Power movement organizing and mobilizing  Black communities, to put an end to the Black genocide in the United $naKKKes. The B.R.L.P. has been tremendously successful uniting rival gangs, namely Bloodz and Cripz, in a common struggle against capitalist-imperialism. Their just war for national liberation and self-determination begins anew at the breaking point of the Black Panther Party of the 1960’s and 1970’s.    </p>
+    <center>
+      <p><img src="pictures/BloodzCripzUnityII.jpg" width="300" height="259" /><br />
+        <font size="2px"><em><strong>Revolutionary Blood and Crip stand at the side<br />
+        of a Black Rider’s Liberation Party general.</strong></em></font></p>
+    </center>
+    </p>
+    <p><strong>The Black Rider’s work is revolutionary work:</strong></p>
+    <ul>
+      <li>Developing an advanced stage of the revolutionary theory of intercommunalism.</li>
+      <li>Strengthening Black Power’s self-defence strategy.</li>
+      <li>Organizing and mobilizing Black communities for the struggle against capitalist-imperialism.</li>
+      <li>Building a united front with AmeriKKKa’s other national liberation struggles.</li>
+      <li>Promoting camaraderie throughout the whole Black nation. </li>
+      <li>Vanguardizing the advanced revolutionary element: THE LUMPENPROLETARIAT.</li>
+    </ul>
+    <h3><em>Settler Allyship</em></h3>
+    <p>The Ameriklan state is the political gun of the Ameriklan bourgeoisie, a majority of whom are White settlers. In foreign lands, soldiers are police; In domestic lands, police are soldiers. Police are the <em>#1</em> enemy of any colonized, captive nation in Kanada and Amerika. Thusly, police are the <em>#1</em> friend to the White settlers of the labour aristocracy. The police defend its property, its power, its privilege. By proxy, this makes any struggle against the pig police state, a struggle of majority against the Klanadian and Ameriklan labour aristocracy minority.</p>
+    <p>The First-Worldist argument that &ldquo;not all Whites oppress; White capitalists oppress&rdquo; is invalid. A majority of Whites are net-exploiters, and a majority of non-Whites are victims of this net-exploitation. Primarily in the imperialist core, race has burned class. The primary dialectical contradiction in the imperialist core is a contradiction between the White labour aristocracy and the non-White proletariat. Class struggle between bourgeoisie and labour aristocracy is dead, and any anti-bourgeois elements of the labour aristocracy are a vast minority. </p>
+    <p>So, who are our real enemies and who are our real friends? It is only by betraying the class of reactionary labour aristocracy, that we are revolutionary as White socialists. Our comrades are the captive Black, Brown, Red, Yellow nations! Towards revolutionary settler allyship!</p>
+    <h2><a name="burndownthelabouraristocracy" id="burndownthelabouraristocracy"></a>Burn Down The Global Labour Aristocracy</h2>
+    <p>Afrikan anti-colonialist leader Amílcar Cabral correctly stated this in <em>1970</em><sup>[<a href="http://onkwehonwerising.wordpress.com/2014/04/25/amilcar-cabral-national-liberation-and-culture/" target="_blank">10</a>]</sup>:</p>
+    <blockquote>“History teaches us that, in certain circumstances, it is very easy for the foreigner to impose his domination on a people. But, it also teaches us that, whatever may be the material aspects of this domination, it can be maintained only by the permanent, organized repression [cultural hegemony] of the cultural life of the people concerned.”</blockquote>
+    <p>Thus, a national liberation must be, in part, a cultural resistance. For the rising new nation, building  a culture of resistance is building a dual power! What is dual power? Dual power relates to the strategy of building effective ideological apparatuses, separately from the existing and oppressive <a href="popups/isa.html" onclick="javascript:void window.open('popups/isa.html','1399902771754','width=500,height=150,toolbar=0,menubar=1,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">ISA’s</a>, to serve the interests of the oppressed. Dual power is, in essence, the construction of  new state-forms and the transforming of them, into forces strong enough to seize power over the present state.</p>
+    <p>An example of dual power in practice would be the Black Panther Party’s liberation schools.</p>
+    <p>In other words, to combat cultural hegemony is to build schools and headquarters of liberation! </p>
+    <ul>
+      <li>Build schools of counter-hegemony to decolonize ghettoized youth.</li>
+      <li>Organize publishing houses and street teams to distribute revolutionary agitprop in ghettoized communities, such as quotebooks and handbooks.</li>
+      <li>Promote revolutionary cultural works, such as revolutionary art, poetry and hip-hop.</li>
+    </ul>
+    <p>The <em>need</em> for counter-hegemony and a culture of resistance goes beyond revolutionary science, delving into basic human psychology: the concept of existential terror. Existential terror is a psychological struggle between one’s desire to live and one’s realization that death is inevitable. This inner-struggle produces a psychological “terror”. The psychological solution: culture. Cultural values serve the people by providing a meaning to life and giving them a purpose. What better, then, to offer the colonized youth a culture of resistance and liberation, to give their life  revolutionary meaning and a revolutionary purpose?</p>
+    <p>To understand more concretely, less abstractly how the struggle for national liberation is inseparable from the construction of a culture of resistance, I recommend a reading of Cabral’s speech <a href="http://onkwehonwerising.wordpress.com/2014/04/25/amilcar-cabral-national-liberation-and-culture/" target="_blank">in its entirety</a>.</p>
+    <p>Amílcar Cabral was assassinated on January <em>23</em>, <em>1973</em>.</p>
+    <h3><em>When Race Burns Class, Burn Down Its Headquarters</em></h3>
+    <p>That’s right! Our greatest enemy is the bourgeoisie, make no mistake. But, if we want to live in a world of peace and humanity, our immediate contestant in the imperialist core is the net-exploiters of the world proletariat, the vanguard of reaction: the labour aristocracy! To burn down the headquarters of capitalist-imperialism and cultural hegemony, we must unite revolutionary class traitors and revolutionary national liberation movements in common struggle. To fight, we must build the broadest possible united front, a united front between all struggles: women’s struggles, national liberation struggles, LGBTQ+ struggles, and practice solidarity with the wider forces of the world revolution<em>—</em>the revolutionary Third World proletariat!</p>
+    <p>The communist must have largeness of mind. Looking beyond the smallness of First-Worldism is a step towards the light.</p>
+    <p>In conclusion, to exceed beyond the stagnating First World revolutionary movement, communists everywhere must grasp the truth: dual power grows out of the barrel of a gun. The hegemonic power of the First World is in conflict with the powerlessness of the Third World. Building a Third World revolutionary power is our great leap. In order to make our movement a revolutionary movement again, we must shed our First-Worldist mentality, and embrace a Third-Worldist mentality. And our revolutionary work must consist of solidarity and allyship primarily, and triggering of class dysphoria secondarily. We can hope that, as the struggle intensifies globally, and in the imperialist core specifically, a sense of class dysphoria will break the foundations of the First World labour aristocracy, fracturing it completely into visible camps of pro-revolutionary and anti-revolutionary forces<em>. </em></p>
+    <p><strong>Towards revolutionary national liberation, reparations, allyship and solidarity!</strong></p>
+    <p><strong>Towards Global People’s War and Global New Democratic Revolution!</strong></p>
+    <p><strong>Long Live Onkwehón:we! </strong> <strong>Long Live Afrika! </strong></p>
+    <p><strong>Long Live all captive nations in the prison houses of KKKanada and AmeriKKKa!</strong></p>
+    <p><strong>Down with Global White Power! All Power to the People!</strong></p><center>
+      <p><img src="pictures/NaxalSoldier.jpg" width="300" height="200" /><br />
+        <font size="2px"><em><strong>A Naxal gun raised to the call of revolution!</strong></em></font></p>
+    </center>
+    <hr />
+    <p><strong>Note:</strong> Throughout this article, many plays on words are used. This is a way of provoking language questions<em>—</em>the historical origins and meanings behind the words we use.</p>
+    <p><strong>Note:</strong> In the context of Third World revolution, the “Third World”  consists of Third World and Fourth World peoples. For the sake of convenience, only “Third World” is used.</p>
+    <p><em>If you wish to make a criticism of my work, <a href="mailto:dzhonmuchenik@gmail.com">email me</a>. And if you wish for your identity to remain anonymous, please include a request for that in your email. </em></p>
+    <h3>Sources</h3>
+    <ol>
+      <li><a href="http://www.defence.lk/new.asp?fname=Canadas_hypocrisy_on_Human_Rights_and_Commonwealth_funding_20140419_01" target="_blank">Canada’s Hypocrisy</a> - Sri Lanka Ministry of Defence</li>
+      <li><a href="http://www.thestar.com/news/2007/02/07/kashechewan_a_community_in_crisis.html" target="_blank">&ldquo;Kashechewan: A Community In Crisis&rdquo;</a> - The Toronto Star</li>
+      <li><a href="http://www41.statcan.gc.ca/2007/10000/ceb10000_003-eng.htm" target="_blank">Where Do Aboriginal People Live?</a> - Statistics Canada</li>
+      <li><a href="https://www.marxists.org/reference/archive/mao/selected-works/volume-1/mswv1_8.htm" target="_blank"> How To Differentiate The Classes In The Rural Areas</a> - MIA</li>
+      <li><a href="https://www.marxists.org/archive/marx/works/1847/11/prin-com.htm" target="_blank"> The Principles Of Communism</a> - MIA</li>
+      <li><a href="https://www.cia.gov/library/publications/the-world-factbook/fields/print_2012.html" target="_blank"> Gross Domestic Product Composition</a> - CIA</li>
+      <li><a href="http://www.dailymail.co.uk/news/article-2283777/Boy-9-hanged-bullied-white.html" target="_blank">&ldquo;</a><a href="http://www.dailymail.co.uk/news/article-2283777/Boy-9-hanged-bullied-white.html" target="_blank">Boy Found Hanged Was Bullied For ‘Being White’&rdquo;</a> - Daily Mail UK</li>
+      <li><a href="http://www.ahf.ca/downloads/suicide.pdf" target="_blank">Suicide Among Aboriginal Peoples In Canada</a> - AHF</li>
+      <li><a href="https://www.commondreams.org/further/2014/05/13" target="_blank">Grotesque Overkill</a> - Common Dreams</li>
+      <li><a href="http://onkwehonwerising.wordpress.com/2014/04/25/amilcar-cabral-national-liberation-and-culture/" target="_blank">National Liberation & Culture</a> - Onkwehón:we Rising</li>
+    </ol>
+    <p><center>
+      <font size="1"><font face="Verdana">[ <a href="#top">Back To Top</a> ]</font></font>
+    </center></p>
+  </div>
+  <div class="sidebar2">
+    <h4>What's In This Issue?</h4>
+    <p><a href="#thirdworldophobia">THIRDWORLDOPHOBIA</a></p>
+    <p><a href="#blackpowerequalsredpowerplusbluepower">BLACK POWER EQUALS RED POWER PLUS BLUE POWER</a></p>
+    <p><a href="#burndownthelabouraristocracy">BURN DOWN THE GLOBAL LABOUR ARISTOCRACY</a></p>
+    <p><font size="1"><font face="Verdana">[<em> </em><a href="/weekly/pdf/issue1.pdf" target="_blank">DOWNLOAD</a> ]</font></font></p>
+  </div>
+  <!-- end .container --></div>
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IRON PHOENIX Weekly, Issue #2 | Revolution In The Core: Vanguardizing The Lumpenproletariat, Triggering Class Dysphoria, Part II</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #ED3237;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other divs~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	overflow: hidden; /* this declaration makes the .container understand where the floated columns within ends and contain them */
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the right instead of the left, simply float these columns the opposite direction (all right instead of all left) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+.sidebar1 {
+	float: left;
+	width: 180px;
+	background-color: #FFFFCC;
+	padding-bottom: 10px;
+}
+.content {
+
+	padding: 10px 0;
+	width: 600px;
+	float: left;
+}
+.sidebar2 {
+	float: left;
+	width: 180px;
+	background-color: #FFFFCC;
+	padding: 10px 0;
+	font-size: 14px;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+	background-color: #CCCCCC;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background-color: #FFFFCC;
+	color: #FFF;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+body,td,th {
+	font-family: "Times New Roman", Times, serif;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="../weekly.html">Index</a></li></ul>
+  </div>
+  <div class="content">
+    <p>FRIDAY, MAY <em>23<sup>rd</sup></em>, <em>2014</em></p>
+    <h1><em><font color="#ED3237"><a name="top" id="top"></a>Issue #2</font></em> | Revolution In The Core: Vanguardizing The Lumpenproletariat, Triggering Class Dysphoria, Part II</h1>
+    <p><font size="2">WRITTEN by FENG HUANG aka IRON PHOENIX</font></p>
+    <p>In the  <a href="i1.html" target="_blank">first issue</a> of <a href="../weekly.html" target="_blank">IRON PHOENIX <em>Weekly</em></a>, I analyzed the unique revolutionary situation of the First World, approaching it from a Third-Worldist mindset. But, in order to firmly cement  the Third-Worldist analysis and worldview, it is necessary to view and review it, have it criticized and self-criticize it at length. Therefore, I am planning the first issue of the <a href="../quarterly.html" target="_blank"> <em>Quarterly</em></a> to take a look at the unique revolutionary situation of the Third World, by continent. However, I think for the second issue of IPW, I’ll make some exposition and enlargement to the first issue’s analysis. This issue includes:</p>
+    <ul>
+      <li><em>EXPOSITION</em> of how proletarian struggle is bound to national liberation struggles.</li>
+      <li><em>ENLARGEMENT</em> of the advanced revolutionary character of the lumpenproletariat. </li>
+    </ul>
+    <p>I’d like to publically align my sympathies to the former MIM (<em>MIMists</em>), <a href="http://revolutionaryaim.org/" target="_blank">the RAIM</a> (<em>RAIMists</em>) and <a href="http://anti-imperialism.com/" target="_blank">Anti-Imperialism.com</a>, from whom I take a large sum of my revolutionary learnings. Their staunchness and arduousness in advancing M-L-M beyond the smallness and backwardness of the First-Worldists and the RIM is highly admirable. Towards the broadest united front, and widest mass line in history, comrades!</p>
+    <p>Let’s get to it. </p>
+    <p>The responses I received from the first issue of IPW included criticisms that my writing was &ldquo;too pedantic&rdquo; (an anarchist) and &ldquo;too anti-White&rdquo; (a White comrade). </p>
+    <p>I&rsquo;d like to illuminate the latter. On the former, I’ll hold my tongue.</p>
+    <p>Firstly, Maoism Third-Worldism is not anti-revolution or anti-White. It is not fueled by an opportunistic desire to tear down the movement in the First World.  &ldquo;Third-Worldist&rdquo; organizations such as <a href="http://llco.org/" target="_blank">Leading Light</a> <em>are</em> counter-revolutionary in practice, and do not move. Moving small quantities of money to the People’s Wars is not revolutionary. Charity work is not revolutionary work. The Third-Worldists do not wish for First Worlders to simply sit on their hands and wait for revolution. We support building the subjective forces for revolution in the First World! We are for revolutionary national liberation struggle <em>and </em>proletarian struggle; We are against <a href="popups/left-sensationalism.html" onclick="javascript:void window.open('popups/left-sensationalism.html','1399902771754','width=500,height=100,toolbar=0,menubar=1,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">left-sensationalism</a>, tailism, and efforts to radicalize spontaneous economism such as the Wisconsin protests or the Occupy Wall Street movement. Signmaking, picketing, boycotting is <em>not </em>revolutionary work! Why do you think <em>they</em> permit it?</p>
+    <p>The Third-Worldists recognize that the First World movement is not moving due to errors in First-Worldist analyses, and we are thusly, against First-Worldist revisionism. </p>
+    <p>Let us bury F.W. revisionism six feet below <a href="popups/gpw-gndr.html" onclick="javascript:void window.open('popups/gpw-gndr.html','1399902771754','width=500,height=100,toolbar=0,menubar=1,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">GPW and GNDR</a>. </p>
+    <p>Comrade Lin Biao wrote, in <em>1965</em><sup>[<a href="http://www.marxists.org/reference/archive/lin-biao/1965/09/peoples_war/" target="_blank">1</a>]</sup>:</p>
+    <blockquote>&ldquo;Since World War II, the  revolutionary movement has, for various reasons, been temporarily held back in the North American and West European countries, whereas the people&rsquo;s revolutionary movements in Asia, Africa and Latin America has been growing vigorously.&rdquo;</blockquote>
+    <p>The Third-Worldists recognize that the primary contradiction of today is <a href="popups/core.html" onclick="javascript:void window.open('popups/core.html','1399902771754','width=500,height=100,toolbar=0,menubar=1,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">core</a> <em>v. </em><a href="popups/periphery.html" onclick="javascript:void window.open('popups/periphery.html','1399902771754','width=500,height=100,toolbar=0,menubar=1,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">periphery</a>, meaning capitalist-imperialist powers <em>v. </em>powerless nations in the Third World. According to Marxist theory, it is contradictions that shape society, thus the terrain of the struggle. The terrain of the class struggle of today is <em>capitalist-imperialism</em> and <em>national oppression</em>. Therefore, revolutionary work is <em>anti-imperialist</em> work and <em>national-iberationist</em> work. Further, we recognize the problem of the large labour aristocracy and larger petty-bourgeoisie in the imperialist centres (KKKanada, AmeriKKKa, Divided KKKdom), who&rsquo;re unlikely to give up their nice homes, driveway of cars, and desk jobs to give their whole life to revolution. Further again, we recognize that the labour aristocracy and petty-bourgeoisie classes of the  First World are largely White and aligned to a nation of White culture and White hegemony. Revolutionary work is counter-hegemonic <em>not </em>anti-White. After all, I am a White Euro-settler, and I am a Maoist Third-Worldist!    </p>
+    <p>For correctly analyzing the society of today, and by working to counterattack the revisionism of today, Maoism Third-Worldism is the Marxism of today. Although we are small in numbers, we are large in mind and spirit,  as the Marxists of Tsarist Russia or colonial China were. And, yes! We recognize that Maoism Third-Worldism is not yet whole in theory, and needs further development. </p>
+    <p><strong>Again, Maoism Third-Worldism <em>is not</em>:</strong></p>
+    <ul>
+      <li>First World defeatism.</li>
+      <li>The advocating of the racial ascendancy of non-Whites over Whites.</li>
+    </ul>
+    <p><strong>What Maoism Thirld-Worldism <em>is</em>, in essence, is:</strong></p>
+    <ul>
+      <li>The advocating of &ldquo;do more, not less for revolution&rdquo;.</li>
+      <li>Defeat of First-Worldist revisionism.    </li>
+    </ul>
+    <h2><a name="nat-libneedscom-revandviceversa" id="nat-libneedscom-revandviceversa"></a>National Liberation Needs Communist Revolution, And Communist Revolution Needs National Liberation</h2>
+    <blockquote>&ldquo;If you do not condemn colonialism and side <em>with</em> the colonial people, what kind of revolution are you waging?&rdquo;<br />
+    —<em>COMRADE HO CHI MINH </em></blockquote>
+    
+    <p>Communists in the First World have forgotten what solidarity means. It means more than unity in the abstract. It means unifying despite differences, and combining if there are none. It means criticizing, being criticized, and self-criticizing. It means mutual support and the strongest sense of camaraderie. The highest form of solidarity between the oppressed is the most beautiful, revolutionary concept imaginable. If one bleeds, we all bleed. If one wins, we all win. Why, then, are communists in the First World not actively working to build the highest form of revolutionary solidarity possible? Third-Worldists argue that it is because they emphasize the primary contradiction  of yesterday, heedless to the primary contradiction of today, and have a chauvinist revolutionary attitude. (&ldquo;You are not a true Marxist!&rdquo;, &ldquo;This is real socialism!&rdquo;)</p>
+    <p>The primary contradiction of today is core <em>v. </em>periphery. In the periphery, this takes the form of a struggle between the national proletariat<em>/</em>peasantry and the comprador bourgeoisie, aided by landlords and bourgeois-nationalist forces; In the core, this takes the form of a struggle between the largely non-White proletariat and White haute-bourgeoisie, aided by the largely White labour aristocracy and large petty-bourgeoisie. One type of struggle in the core is the struggle for national liberation, or for whole new nations, and this struggle is not waged on the dark plane of class war, but on a darker plane underneath it. Too often, the labour aristocracy gains by fighting against national liberation, and that is why we emphasize its precedence. </p>
+    <h3><em>Below The Class War, There Is A Civil War</em></h3>
+    <p>There are three types of wars being waged in Kanada<em>/</em>Amerika:</p>
+    <ol>
+      <li><strong>Class war:</strong> Struggle between those who have none and those who have it all.</li>
+      <li><strong>Colonial war:</strong> Struggle between colonized peoples and the agents of colonization.</li>
+      <li><strong>Civil war:</strong> Infighting  between oppressed groups, commonly national groups in the form of gang wars, as well as between women and others.</li>
+    </ol>
+    <p>First-Worldist theory highlights the class war, and pays no heed to the colonial and civil wars. First-Worldists, coming from a mechanical understanding of Marxism, may even denounce <em>all </em>forms of nationalism, the national movement or national liberation itself. This is non-Marxist. The civil war is of primary revolutionary consequence, particularly in the imperialist core, but worldwide as well. Imperialism’s wretched hands are choking <em>all </em>nations, <em>all</em> nations deserving of liberation are under a form of national oppression. Many First-Worldists argue that socialism comes first... it cannot! If it does, you’ll naturally begin a period of socialist-imperialism. </p>
+    <p>First, let us define nationalism. Nationalism is  love of the culture <em>and</em> history of one’s nation, and the identifying of self or others by nation. To put that in perspective, what does that say about Klanadian or Ameriklan nationalism? Nationalism here is love of the culture <em>and</em> history of racism, colonialism, genocide and imperialism. It is White nationalism in disguise.</p>
+    <p>There are two types of actually-existing nationalism in the world:</p>
+    <ol>
+      <li><strong>Civic nationalism:</strong> A grotesque form of nationalism, predominantly in ex-settler countries, where inclusion is granted according to one’s degree of White-washing. </li>
+      <li><strong>Ethno-nationalism:</strong> An archaic form of nationalism, where brotherhood and sisterhood is defined by bloodlines and skin colours. </li>
+    </ol>
+    <p>National-liberationists promote a form of nationalism characterized by liberation from hegemony, unity among all &ldquo;sub-national&rdquo; ethnic groups, and proletarian internationalism. This type of nationalism is commonly socialist and pan-nationalist (Onkwehón:we pan-nationalism, Afrikan pan-nationalism, Arab pan-nationalism). Although firmly rooted in culture <em>and</em> history (more so in counter-culture and people’s history), under pan-nationalism, membership goes beyond fraternity and sorority, and is characterized by choice, unbreakable solidarity and comradeship, wherein all members are conscious of their national, continental, and international rights, duty and identity. </p>
+    <p>National-liberationists do not desire power over small communities, or autonomous regions underneath a nation, rather they desire land and the freedom to construct a new nation that grants <em>all</em> power (political, economic, social, cultural) to <em>their</em> people. We cannot put this on the backburner, and argue that communist revolution comes first. They occur simultaneously! When communist revolutionaries stumble, our liberationist comrades give us a hand. If they stumble, let us give them ours. Developing the subjective forces for total transformation of society means developing forces for revolution and national liberation, socialist-in-character.</p>
+    <p>Third-Worldism calls on proletarian forces and national liberation forces, to unite worldwide. We do not wish to combine forces into a single party. Let us come together naturally as part of the process of total transformation. Let us build a united front.</p>
+    <p>The revolutionary national movement for people&rsquo;s liberation and self-determination is fruitless if it is not fought alongside communist revolution, and likewise, the revolutionary movement for socialism and communism is fruitless if it is not fought alongside national liberation struggles. Why? A warrior of the <a href="http://oshkimaadziig.org/">Anishinabek Confederacy To Invoke Our Nationhood</a> argued that &ldquo;Marxists <em>need</em> to be more Anishinabek&rdquo;, fundamentally meaning Marxists lack &ldquo;warrior spirit, love for the greenest Earth&rdquo;. I agree, and argue that warriors of national liberation <em>need </em>to be more Marxist, and I point to the fall of Marx-lacking anti-colonialist struggles in Afrika in making my argument. We have <em>a lot</em> to learn from one another, and rebuilding the rusted links connecting humanity is going to be a challenge. Let them hold one epoch longer.    </p>
+    <center>
+      <p><strong>All boots stand on common ground! All guns point to common sky! <br />
+    </strong><strong>Unite for the war to end all war: class war, colonial war, civil war, and imperialist war!</strong></p></center>
+	<center>
+      <p><img src="pictures/ImperialismKills-KillImperialism.png" width="200" height="249" /><br />
+        <font size="2px"><em><strong>All hands together for revolution, regardless of your skin colour!</strong></em></font>	</p>
+	</center>
+	<p>Regrettably, this is merely an abstract view of many, and oftentimes contradictory movements for national liberation. In order to make a more concrete analysis, let us weigh the polemics of two contradictory spokespeople for Black national liberation: <a href="http://rashidmod.com/" target="_blank">Rashid</a> of the New Afrikan Black Panther Party (Prison Chapter) and <a href="http://www.kersplebedeb.com/sanyikashakur.html" target="_blank">Comrade Shakur</a>, a soldier of the New Afrikan People’s Liberation Army, member of New Afrika and of its Provisional Government. </p>
+	<p>By analyzing (some of) their polemics, I am affirming two points:</p>
+	<ol>
+	  <li>Before a national government is weakened and helpless, provoking revolution is folly.</li>
+	  <li>Revolution comes to the First World <em>from</em> the Third World, and the forces who carry it here are primarily  lumpenproletarian (Although, I’ll touch briefly on this, and outline the complexities of it in <a href="#fromcountrysidetocity" target="_blank">From The &ldquo;Countryside&rdquo; To The &ldquo;City&rdquo;</a>).</li>
+    </ol>
+	<h3><em>One Drop Of Afrikan Blood Sets One Outside Of The &ldquo;Melting Pot&rdquo; Of White AmeriKKKa: Not All Of Us Are Burning, But Class Is</em></h3>
+	<p>What is national liberation? What is self-determination? It is a movement to free a people from control of the dominant national power, win land, set up a national government <em>by</em> its people <em>for</em> its people, as well as other national state-forms (armies, committees, political parties, cultural institutions, etc.). A national liberation movement is based on a question of nationalism (“Do we constitute a nation inside of a nation?”, “If so, where is our national territory?”).</p>
+	<p>The members of the New Afrikan nation have determined that Black people evolved from Afrikans into New Afrikans, and constitute a nation, detached from “Amerikan” <em>and </em>“Afrikan” nationhood. They proclaim their national territory is Louisiana, Mississippi, Alabama, Georgia, and South Carolina, where thousands of Afrikan people were ‘stolen’ and ‘shipped’ to work for the settler nation as a permanent, colonized labour force.	This area is where they toiled, died and buried their dead. This territory it calls the Republic of New Afrika, and its Provisional Government, is a government-in-exile. However, its line differs from the line of other Black Power movements operating throughout the imperialist core, namely the B.R.L.P., and the New Afrikan Black Panther Party (Prison Chapter). Instead of relying on the line of the African Blood Brotherhood and the Black Panther Party’s intercommunalist theories, the New Afrikan nation denounces integrationism, which has its root in the bourgeois-national Black civil rights (reformist, non-revolutionary) movement.</p>
+	<p>The ABB-aligned forces (<em>i.e.</em>, N.A.B.P.P.P.C.) regret that they have to reconstruct from ground zero. They do not understand (<em>yet!</em>) that the Black Power movement fell to ground zero <em>because </em>of the erroneous theory of  ABB-aligned forces, and their reimplementation.</p>
+	<p>In fact, it is <em>because </em>of liquidation due to the former integrationist movements that the proponents of the New Afrikan nation have to reconstruct the movement from ground zero. However, New Afrikan is the Black nationalism of today. Its proponents seek the deconstruction of race and racism, and the construction of a socialist New Afrikan Republic! Furthermore, they seek to rebuild relationships with (socialist) settler nations.	Their line calls for unity among New Afrikans and settler-socialists, but not integration or combining forces, because as it correctly assessed years ago: integrationism (reformism) is counter-revolutionary.</p>
+	<p>But, I digress.</p>
+	<p>The meat of Rashid’s critique of the New Afrikan movement is as follows:</p>
+	<ul>
+	  <li>‘Blacks’ are not a whole nation, as they are largely dispersed across AmeriKKKa, and live and work in hundreds of communities around the country. </li>
+	  <li>‘Blacks’ are no longer a rural peasantry, and today are an urban proletariat. </li>
+    </ul>
+	<p>Comrade Shakur’s counter-critique is as follows:</p>
+	<ul>
+	  <li>‘Blacks’ <em>are</em> a whole nation, members of the New Afrikan nation. They were brought to Amerika from Old Afrika by the colonizers, and their living space was carved out around the ‘Black’ belt. Scientifically, the ‘Black’ belt is the homeland of <em>New </em>Afrika, and all of its members across AmeriKKKa have a right of return during the construction of a Republic on that homeland, guaranteed by its Provisional Government. The ‘Black’ national question is <em>not </em>dead <em>– it is answered</em>. Further, calling New Afrikan people ‘Black’, like ‘nigger’ and ‘negro’ before it, is no longer acceptable. ‘Black’ people are New Afrikan people. </li>
+	  <li>‘Blacks’ have never been a “rural peasantry”. The “rural peasantry” were classes of colonial-feudalist Russia and colonial-feudalist China, as analyzed by Comrade Lenin and Comrade Mao respectively. Although colonial, Ameriklan relations of production have <em>never been </em>feudal, therefore there have <em>never been</em> a “rural peasantry” on Amerikan soil. The bulk of Afrikans have <em>always been</em> a working proletariat. </li>
+    </ul>
+	<p>Comrade Shakur’s critique of the N.A. Black Panther Party	is as follows:</p>
+	<ul>
+	  <li>Practicing democratic-centralism and cell-structure in small groups in prisons or in oppressed communities is doomed to failure, because the power of the pig police over these sectors is too strong. Therefore, cells are defenceless to attacks by fascist brutality, and their ranks are open to having the leadership determined <em>by </em>police (by removing and confining key figures, so as to allow others less trained or more violent to rise the ranks).</li>
+	  <li>Practicing the Foco theory of armed struggle is doomed to failure in the belly of the beast. The Maoist concept of mass line and Protracted People’s War is revolutionary, for an armed struggle against the imperialist state cannot win hearts and minds because of its massive state power (Fascist Bureau of Intimidation, Central Intimidation Agency), and large social base. In order to successfully transform society,  non-armed struggle comes first, to build a sympathetic, mass social base supportive of revolutionary armed struggle. Furthermore, PPW is universal and by applying it to the core <em>and</em> periphery, it has become GPW (Global People’s War) theory.
+	    <ul>
+	      <li><strong>Editor’s note:</strong> Some communists argue that the Black Panther Party fell to gangsterism because it organized and mobilized lumpenproletarians. I disagree.<br />
+In my assessment, I think the Black Panthers fell because they made fatal errors in their organizing and mobilizing strategies, opening them to police intimidation, particularly from practicing Focoism, and democratic-centralism too early on.</li>
+        </ul>
+	  </li>
+	  <li>That the N.A. Black Panther Party is New Afrikan in name only, for they promote integrationist (reformist) approaches to national liberation of captive Afrikans in Amerika, and do not believe <em>Blacks </em>(they use the colourized term) have any stake in territory. According to Shakur, and I agree, they are not New Afrikans yet, merely adherents to outmoded theories presented by <em>Black </em>liberationists like Harry Haywood.</li>
+    </ul>
+	<p>I’ll let you reflect on this, and form your conclusions. </p>
+	<p>I recommend reading Rashid’s <a href="http://rashidmod.com/?p=301" target="_blank">critique</a> of Shakur, Shakur’s <a href="http://anti-imperialism.com/2012/08/20/get-up-for-the-downstroke-a-responce-to-black-liberation-in-the-21st-century-a-revolutionary-reassesment-of-black-nationalism/ " target="_blank">critique</a> of Rashid, <a href="http://www.prisoncensorship.info/news/all/US/934" target="_blank">a review</a> of <em>Defying The Tomb</em> by MIM Prisons, and documents of the Provisional Government of the Republic of New Afrika,  the <a href="http://www.asetbooks.com/us/asetu/courses/blackgovernment101/CodeUmoja.html">National Constitution</a> and <a href="http://www.prairiefire.org/CRSN/dec.shtml" target="_blank">Declaration of Independence</a>.</p>
+	<h2><a name="fromcountrysidetocity" id="fromcountrysidetocity"></a>From The &ldquo;Countryside&rdquo; To The &ldquo;City&rdquo;    </h2>
+    <p>An arrogance and lack of knowledge of White history permeates all social interaction. If you ask a settler what they think of green politics, a common response is &ldquo;Why do we have to focus on that? Pollution is being made in the Third World, not here&rdquo;. They conveniently forget how many of their electronics are produced <em>in </em>the Third World. Yesterday, my (non-communist) friend threw his Minute Maid orange juice can on the ground (I put it in a bin, do not fear!). When we got back to my place, he asked me if I thought there were more immigrants coming to &ldquo;our country&rdquo; in the 1970’s or modern day. I barely hesitated before responding, &ldquo;Dude, <em>we’re</em> immigrants! <em>We’re</em> standing on foreign land.&rdquo;</p>
+    <p>Now, aside from the omnipresent settler-chauvinist bigotry of the White First World, the trade unions of the First World do not function as &ldquo;schools of revolution&rdquo;, as they did in Comrade Lenin’s time. For example, ex-workmates of mine used to compete for overtime hours, and used the trade union to get more, so they could buy new <a href="http://en.wikipedia.org/wiki/Rim_(wheel)" target="_blank">rims</a> or  newer cell phones. They were workers struggling <em>for </em>decadence, not to live. I am guilty of having done this before as well. <em>Yes</em>, I <em>want </em>to work longer shifts. I am, myself, partly embourgeoisified. And although I find myself nearer and nearer to class suicide  by embracing Maoism Third-Worldism, imagine me trying to sympathize with Third World workers, telling them that I share their class interests and aspirations and feel their pain and <em>their</em> struggle. How condescending does that sound? </p>
+    <p>I am alienated as a worker, but privileged a hundredfold by my labour nobility and White skin. Embourgeoisified. What do I struggle for, really? Am I exploited?</p>
+    <p>First World workspace (<em>incl.</em> the trade unions) is so embourgeoisified, so anti-proletarian, so individualist in nature, that First World workers struggle to pay mortgages and fill savings accounts. We aspire to bourgeoishood. To the average worker, society is better off composed of <em>100%</em> petty-bourgeoisie, not <em>100%</em> proletariat. As communists, why concentrate on proletarianizing so many people against the thousands of privileges afforded to First World workers by capitalist-imperialism? Maoism Third-Worldism has other priorities. Although part of our praxis is triggering a sense of class dysphoria<em>*</em>, and encouraging workers to commit revolutionary class suicide, our primary task is solidarity and revolutionary work, working with the exploited. To us, First Worlders have a tough life because they are alienated or oppressed, yes, but not exploited. You cannot compare their lives to the lives of Third World exploited. And so, uniting <em>real </em>friends against <em>real </em>enemies is our task, not simply picking sides. (“Syria!” “No, FSA!”)    </p>
+    <p>Furthermore, we view First-Worldist currents as revisionist and counter-revolutionary. Why? Well, in Klanada, we have two revisionist, electoral “legal” communist parties, a backwards male-chauvinist youth league, hundreds of Trotskyite sects, plenty of reformist groups, and all sorts of “socialists” who grew up in well-off communities who have no idea how to hold a gun. Revisionism in the First World is overflowing, flooding, leaking, washing over the left, including the international left. We point to the hazardous tendency of the nearly-defunct RIM in promoting the idea that vanguardism in the First World is underway, and capitalist-imperialism is approaching its last hour. It is, in large part, because of First-Worldism that the people of the Third World are hesitant to make revolution, for they believe that capitalist-imperialism cannot be demolished by a Third World revolution. We shout back, that the Third World revolution is of major consequence to the success of the First World revolution, and not the reverse! </p>
+    <p>The <em>RIMists </em>argue that the objective forces for socialist revolution exist here, but they do not. Not in the First World. Not yet. And because they are not analyzing the objective forces properly, they are not properly building the subjective forces for revolution, forces that know when and how to respond to crises in capitalist-imperialism. They are making serious errors in their analysis of “real friends” and “real enemies”, or picking sides too often. They do not strike me as the vanguard type... at all. And their teeth are far too straight, regardless.</p>
+    <p>After all, First-Worldists do not seem to have heart or backbone enough to put their boots to the street and stand up for the <em>exploited</em>. When they do, they bring a video camera to “shoot” for protection, or climb street signs and yell and vandalize property. Otherwise, they are content to stay at home and use the Internet, or let chauvinists, reactionaries, and petty-bourgeoisie fill the ranks of their organizations. And far too many of them are fearful of violent action. </p>
+    <p>Errors <em>must</em> be rectified:</p>
+    <ul>
+      <li>Get active! Go outside!</li>
+      <li>Think more critically about who are your <em>real</em> friends and <em>real</em> enemies.</li>
+      <li>Train more cadres of and give leadership roles to members of exploited groups.</li>
+    </ul>
+    <h3><em>A Revolution Is Not A Dinner Party, It Is An Act Of Violence</em></h3>
+    <p>Comrade Mao wrote, in 1927<sup>[<a href="https://www.marxists.org/reference/archive/mao/selected-works/volume-1/mswv1_2.htm" target="_blank">2</a>]</sup>:</p>
+    <blockquote>
+      <p>“A revolution is not a dinner party, or writing an essay, or painting a picture, or doing embroidery. It cannot be so refined, so leisurely and gentle, so temperate, kind, courteous, restrained and magnanimous. A revolution is an insurrection, an act of <em>violence</em> by which one class overthrows another.”    </p>
+    </blockquote>
+    <center>
+    </center>
+    <p>Agreed!</p>
+    <p>It is a violent <em>and</em> authoritarian act whereby the exploiter imposes its will upon its exploiters. Who, again, are exploited in the First World? Who, again, are part of the exploiters?</p>
+    <p>To carry out an act of violence, a force that is prepared to handle violence is needed. Where do we find a suitable force to teaching a lazy, technology-dependent people how to fight? Some proponents of M-L-M have proposed radicalizing ex-imperialists (soldiers).<em> Soldiers!? </em>Right. Other proponents have put forth an analysis of the lumpenproletariat, and proposed we radicalize them. I’d rather fight alongside the oppressed, exploited ex-gangsters than former state-agents, rapists and baby killers.</p>
+    <p>Before I go any further, I’d like to express my dislike for the term &ldquo;lumpenproletariat&rdquo;. Lumpen, from the French word for &ldquo;rag&rdquo;, implies disrespect. Henceforth, I am going to use <em>dents</em>proletariat to refer to the marginalized, criminalized groups in society. Dents, from the French word for &ldquo;teeth&rdquo;, implies a higher degree of respect. Ex-gangsters tend to refer to their gang life or criminal life as having &ldquo;cut their teeth&rdquo;. <em>Dents</em>proletariat it is!</p>
+    <p>In the manifesto of the Latin Kings-Queens Nation (a gang) it is written<sup>[<a href="http://thehoodup.com/board/viewtopic.php?t=43773#.U3wWLfldWM8" target="_blank">3</a>]</sup>:</p>
+    <blockquote>
+      <p>&ldquo;The history of all hitherto existing gang feuds is a history of label struggles for the sake of ‘clique’ recognition. It is this egotistical force for recognition, which leads to rivalry, and senseless conflicts, which often cost the high price of human life<em>—</em>the life of our people, the oppressed Third World peoples.&rdquo;</p>
+      <p>&ldquo;The New King-Queen recognizes that the time for revolution is at hand [...] <br />
+      A revolution that will bring freedom to the enslaved, to all Third World peoples, as we together sing and praise with joy what time it is. It is Nation time! <br />
+      Time for <em>all </em>oppressed people of the world to unite!&rdquo;</p>
+    </blockquote>
+    <p>Maoism Third-Worldism views the dentsproletariat as the advanced revolutionary element in the First World, and the element best-suited for bringing revolution from the Third World (&ldquo;countryside&rdquo;) to the First World (&ldquo;city&rdquo;). Who are the dentsproletariat? They are the largely non-White peoples who cannot sell their labour-power to work and live. Largely marginalized, criminalized, unemployed and minority groups; The groups of society who do not stand to lose and stand to gain a world during revolution. A good example are the Onkwehón:we, who have been exploited for hundreds of years. <em>23% (<a href="popups/4percent.html" onclick="javascript:void window.open('popups/4percent.html','1399902771754','width=500,height=100,toolbar=0,menubar=1,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;">of 4%</a>)</em>, a sobering percentage, of our prison populations are made up of Onkwehón:we<sup>[<a href="http://www.ctvnews.ca/canada/report-to-show-aboriginal-prison-population-has-risen-to-23-per-cent-1.1184973" target="_blank">4</a>]</sup>, for they live under brutally oppressive and exploitative conditions. Their conditions are so brutal across the country, that the average life expectancy of an Onkwehón:we in Toronto is <em>37</em>-years old<sup>[<a href="http://www.huffingtonpost.ca/2014/04/23/aboriginal-early-death-toronto_n_5201404.html" target="_blank">5</a>]</sup>. </p>
+    <p>The whole life of an Onkwehón:we is an endless battle for personal and national survival. However, they are a vigilant and resilient people. I want them to survive. And I want to help.</p>
+    <p>Onkwehón:we are proud of their warrior culture, and their warrior spirit and have a spiritual, cultural and ancestral connection to the land of North Amerika. They call upon this spirit in their struggle to exorcize the Euro-settler state. Let us commit to allyship and join the offensive! </p>
+    <p>Let us learn from them, let them teach us the revolutionary, warrior spirit!</p>
+    <p> I want to make a few observations for the furtherance of making my analysis. This is true of Onkwehón:we, at least in Kanada:</p>
+    <ul>
+      <li>Onkwehón:we are marginalized by the Euro-settler state’s oppression and exploitation of their people, and Onkwehón:we peoples oftentimes turn to crime to survive.</li>
+      <li>Onkwehón:we have a reformist, bourgeois-nationalist force in Parliament that has a lot of influence on its people, primarily their Elders and cultural<em>/</em>religious figures.</li>
+      <li>Onkwehón:we (commonly) do not want <em>all </em>of Kanada back, merely national liberation, independence, self-determination and territory (or territories). </li>
+      <li>Pan-Onkwehón:we national liberationists desire to free their people from Euro-Klanada, construct a socialist, Onkwehón:we worker’s state, forge healthy relationships with the &ldquo;newcomer&rdquo; nations (immigrants to Kanada) and repair their relationship to Euro-settlers. In many ways, the struggle to free Palestine is held close-at-heart for Onkwehón:we, and solidarity with oppressed, exploited nations across Amerika is strong.</li>
+      <li>The Third-Worldist approach is best-suited for building revolutionary solidarity between Onkwehón:we and revolutionary Euro-settlers. In the past, First-Worldist comrades have expressed disdain when I suggest that Onkwehón:we determine <em>their own</em> land reform. First-Worldists have, in the past, argued that Onkwehón:we struggles be steered by a communist party. Too common is that chauvinist mentality found among First-Worldists.</li>
+      <li>It is my sincerest hope that Onkwehón:we learns from MIM Prisons and New Afrikans in organizing and mobilizing dentsproletarians, particularly inside of KKKanadian prisons. 
+        <ul>
+          <li>The observations above were made by studying the <a href="http://onkwehonwerising.wordpress.com/resources-for-knowledge/onkwehonwe-rising-basic-points-of-unity/" target="_blank">Points of Unity</a> of Onkwehón:we Rising, and <a href="http://oshkimaadziig.org/2014/04/20/anarchists-and-marxists-line-up-to-the-left-the-path-of-the-anishinabek-has-always-been-right/" target="_blank">a column</a> by Comrade Giibwanisi.</li>
+</ul>
+      </li>
+    </ul>
+    <center>
+      <p><img src="pictures/OkaStandoff.jpg" alt="" width="300" height="196" /><br />
+    <font size="2px"><em><strong>KKKanadian imperialist v. Onkwehón:we warrior.</strong></em></font></p></center>
+    <p>Many dentsproletariat are gang-affiliated. Onkwehón:we gangs are on the rise. WARRIORS, a prairie-based organization, have thousands of combatants. Thousands!</p>
+    <p> Imagine! Imagine if a mere half of them were transformed for revolution.</p>
+    <p>Dentsproletarians are armed, have worked under battlefield hierarchy, have fought before. Already, they are better-suited for armed struggle than a majority of us. Furthermore, they are largely non-White peoples<em> from</em> Third World countries, and thus, are already halfway towards being a revolutionary force. The roadblock to advanced revolutionary political consciousness for them, is the fact that they are colonized, their mind a product of colonialism. Immigrants come here and aspire to <em>be</em> Kanadian or <em>be</em> Amerikan. I have met immigrant workers who’ve expressed their desire to attain Kanadian citizenship. Kanadian citizenship, on stolen land? Welcome to the prisonhouse. Citizenship for an immigrant, means trading independence for a second-class existence. And soon enough, their children are indoctrinated and White-washed, grow up alienated and disrespected. That is why, in the <a href="i1.htmlhttp://blavod.x10.mx/weekly/i1.html#burndownthelabouraristocracy" target="_blank">first issue</a> of IPW, I stressed the importance of building a culture of resistance, a culture of <em>decolonization</em>. </p>
+    <p>As part of Third-Worldist praxis, it challenges First-Worldist revisionism and &ldquo;Kanadian&rdquo; settler-chauvinism in the movement, by putting the oppressed <em>and </em>exploited elements (Onkwehón:we, New Afrikans, trans people, etc.) in positions of command and leadership and power<em>.</em> And we do not harbour resentment for those who are criminalized by capitalist-imperialism, for they have the teeth to fight back. And that is why M(TW) sees the dentsproletariat as advanced elements<em>—</em>to vanguardize those elements, in essence.    </p>
+    <p>It puts politics in command. It serves the people. </p>
+    <h2><a name="npa-revolutionfromphilippinestolosangeles" id="npa-revolutionfromphilippinestolosangeles2"></a>New People’s Army: A Revolution From The Philippines To Los Angeles    </h2>
+    <p>In this section, I’m going to promote the works of a conscious Filipino rapper engaged in ground-level revolutionary work in Los Angeles, a revolutionary M(TW) dentsproletarian. However, before I do, I’d like to briefly analyze the Philippines and its history of imperialism and the struggle for national liberation.</p>
+    <hr width="50%" />
+    <p>Klanada has <em>2,902</em> cubic kilometres, roughly <em>10<sup>15</sup></em><sup> </sup>litres of fresh water unfathomable quantity accounting for <em>20%</em> of the global fresh water supply<sup>[<a href="https://www.cia.gov/library/publications/the-world-factbook/fields/2201.html" target="_blank">6</a>]</sup>. After Supertyphoon Yolanda blew through the Philippines, destroying all in its path, Klanada gave roughly <sup><em>$</em></sup><em>40</em>-million dollars to humanitarian relief efforts<em>—</em>in the form of food, water, medicine<sup>[<a href="http://www.theglobeandmail.com/news/politics/canadian-aid-to-typhoon-hit-philippines-nears-40-million/article15487070/" target="_blank">7</a>]</sup>. At first glance, it looks to be a benevolent and humanitarian act. In the minds of its citizens, Klanada is a chief player in worldwide humanitarianism. Why, then, does Klanada spend <sup><em>$</em></sup><em>22</em>-billion dollars on war<sup>[<a href="http://data.worldbank.org/indicator/MS.MIL.XPND.GD.ZS" target="_blank">8</a>]</sup>, and mine (and export) <em>18%</em> of the worldwide uranium supply<sup>[<a href="http://www.world-nuclear.org/info/Country-Profiles/Countries-A-F/Canada--Uranium/" target="_blank">9</a>]</sup>? We have a saying in Klanada, that &ldquo;we export life and death: wheat, for life; uranium, for death&rdquo;.</p>
+    <p>Billions of dollars of death. Millions lack safe water. Roughly <em>800</em>-million in the Third World<sup>[<a href="http://water.org/water-crisis/water-facts/water/" target="_blank">7</a>]</sup>. Where’s their relief?</p>
+    <p>Klanada is the <em>#1</em> ally to Ameriklan imperialism, and part of its imperialist agenda is small, periodic donations to the Third World to divert attention from the fact that it charges for death, and assists in robbing the life of the Third World. And AmeriKKKa has, throughout history, brought death and destruction directly upon Filipinos, during the Philippine–Ameriklan War, and under the War <em>of </em>Terror in the Philippines, waged since <em>2002</em>. </p>
+    <p>Let’s first analyze that in-depthly. </p>
+    <h3><em>The Philippine–Ameriklan War</em></h3>
+    <p>For over one hundred years, Ameriklan imperialism has had hands or eyes on the Philippines.</p>
+    <p>The nineteenth century was a mad race for dominance. Amerika, Japan, Germany, Spain, and others, fought for control over land, resources and people. At first, Amerika was friendly to the Filipino struggle against Spanish imperialism, which culminated in the Filipinos declaring their independence from Spain. Peace was short-lived, however, as Amerika cut their throats, and invaded (to bring democracy to, and &ldquo;Christianize&rdquo; the region). Ameriklan soldiers forced the native population into brutal concentration camps, tortured and shot innocent Filipino peoples. Back in AmeriKKKa, opposition to the war grew. Thousands came together and formed the Anti-Imperialist League to oppose the U.S. KKKongress. Alas, their struggle was a failure, although it cemented the foundation for future anti-imperialist struggles. The AIL broke, and U.S. KKKongress proceeded unchallenged. </p>
+    <p>During the war, U.S. soldiers wrote home about the atrocities they were forced to commit. Ameriklan military generals lied through their teeth to hide atrocities from the media. </p>
+    <p>For <em>50 </em>years after the war, till the beginning of WWII, Filipinos struggled for freedom. Then, as part of a global shift in capitalist-imperialism, Amerika signed the Treaty of Manila in <em>1946</em>.    </p>
+    <p>A period of neocolonialism began. </p>
+    <h3> <em>The War </em>of<em> Terror In The Philippines</em></h3>
+    <p>For <em>50 </em>years after the Treaty was signed, Amerika controlled the Philippines through a Filipino comprador bourgeoisie and their bourgeois-nationalist forces. In <em>1949</em>, the Chinese Revolution began, inspiring exploited and oppressed nations throughout the global countryside to rebel and overthrow their puppet governments. In the <em>1960’s</em>, the Communist Party of the Philippines was founded, as well as its military arm, the New People’s Army. NPA subsequently launched a protracted people’s war and new democratic revolution aiming to transform the Philippines from a colonized plantation zone into a socialist workers’ state. The compradors and their Armed Forces of the Philippines, largely aided by Amerikan support, has waged a war against its people for fifty years.</p>
+    <p>In <em>2001</em>, the World Trade Centre fell. In <em>2002</em>, as part of its War <em>of </em>Terror, AmeriKKKa again invaded the Philippines to &ldquo;combat terrorism&rdquo;. In reality, AmeriKKKa is terrified of the resurgence of people’s power. Ameriklan forces are in a non-combative position, instead delivering  training, advice and assistance to the AFP military, as well as <a href="http://en.wikipedia.org/wiki/Winning_hearts_and_minds" target="_blank">winning hearts and minds</a> and working to break the people’s support of the CPP-NPA. AFP military operations in the Philippines have left a trail of devastation across the rural countryside, and living<em>/</em>working conditions have <em>not</em> improved. </p>
+    <p>For many, they’ve worsened.    </p>
+    <center>
+      <p><img src="pictures/Philippines1.jpg" alt="" width="300" height="200" /><br />
+    <font size="2px"><em><strong>A struggling Filipino woman and sweatshop worker.</strong></em></font></p></center>
+    <center>
+      <p><img src="pictures/Philippines2.jpg" alt="" width="300" height="200" /><br />
+    <font size="2px"><em><strong>The public burning of the imperialist flag.</strong></em></font></p></center>
+    <h3><em>The Streets Of Los Angeles: A War Of Proxy</em></h3>
+    <p>Los Angeles is home to more than half a million Filipinos, and dozens of Filipino gangs. One Filipino resident of Los Angeles is Buck Taylor, ex-gangster, and Secretary-General of the <a href="http://propeopleyouth.com/about/" target="_blank">Kabataang Maka-Bayan</a> (Pro-People Youth) movement. As a pro-NPA organization, the Kabataang Maka-Bayan works inside of oppressed Filipino communities to:</p>
+    <ul>
+      <li>Raise the consciousness of Filipino youth in danger of being recruited by gangs. </li>
+      <li>Organize and mobilize the masses of Filipino communities to fight for national liberation.</li>
+      <li>Promote solidarity between oppressed Filipinos in Amerika, and in the Philippines.</li>
+    </ul>
+    <p>As well as community organizing and revolutionary work, Buck Taylor raps, as <em>Bambu</em>, addressing a wide range of political, economic, social and cultural issues. He <em>is</em> a communist (Maoist Third-Worldist) revolutionary, struggling creatively to build the subjective forces for socialist revolution. Throughout his music, he combats liberalism, Internet-based activism, First-Worldism, alarmism and conspiracism, and promotes revolutionary lines like &ldquo;read more, and self-criticize&rdquo;, &ldquo;it’s right to rebel&rdquo;, &ldquo;dare to struggle, dare to win&rdquo;, &ldquo;serve the people&rdquo;.</p>
+    <p>Listen to a  few of his records, critically,  and take his words to heart: <a href="http://beatrockmusic.bandcamp.com/album/one-rifle-per-family" target="_blank">One Rifle Per Family</a>, and <a href="http://beatrockmusic.bandcamp.com/album/bambu-exact-change-reloaded" target="_blank">Exact Change</a>, and <a href="http://beatrockmusic.bandcamp.com/album/sun-of-a-gun" target="_blank">Sun Of A Gun</a>. </p>
+    <blockquote>&ldquo;We must strive every day, so that this love of living humanity is transformed into actual deeds, into acts that serve as examples, as a moving force.&rdquo;<br />
+    —<em>COMRADE CHE</em> <em>|</em> <a href="http://www.marxists.org/archive/guevara/1965/03/man-socialism.htm" target="_blank">Socialism And Man In Cuba</a></blockquote>
+    <p>In conclusion, we are bound by dialectics—all of humanity, and to the Earth. Let us learn from one another, teach one another, lead and follow, unite and struggle alongside one another.</p>
+    <p>Onkwehón:we, New Afrikans, Filipino liberationists, revolutionary Euro-settler class traitors: Let us dare to struggle!</p>
+    <p>For revolution. For liberation of captive nations, exploited and oppressed Third World people. For universal enfranchisement, politically, economically, socially, culturally. For respect of all people mistreated and alienated, the LGBTQ+, trans people, women, mothers, children.</p>
+    <p>For the global victory of the People’s War and of the New Democratic Revolution.</p>
+    <p>Let us dare to win!</p>
+    <p><strong>Towards peace and plenty, for New Afrika and Old Afrika!</strong></p>
+    <p><strong>Towards peace and plenty, for the Philippines and for the Filipino nation in Amerika!</strong></p>
+    <p><strong>Towards peace and plenty, for <em>all </em>nations and nationalities throughout the globe!</strong></p>
+    <p><strong>Towards global peace and prosperousness!</strong></p>
+    <center>
+      <p><img src="pictures/NPAEmblem.png" alt="" width="300" height="272" /><br />
+    <font size="2px"><em><strong>New People’s Army!</strong></em></font></p></center>
+    <hr />
+    <p><strong>Note:</strong> I wrote the parts pertaining to the New Afrikan movement prior to having read Shakur&rsquo;s &ldquo;<a href="http://www.kersplebedeb.com/oncorrectterminology.html">On Terminology</a>&rdquo;. In the future, some of his language changes may be present in my works. </p>
+    <p><strong>Note: </strong>I call the unease I felt when I realized I was not part of the proletariat &ldquo;class dysphoria&rdquo;, and I believe it is the first step on a descending staircase that leads away from labour nobility towards revolutionary class suicide, and submersion in that plane of battle below the class war.    </p>
+    <p><em>If you wish to make a criticism of my work, <a href="mailto:dzhonmuchenik@gmail.com">email me</a>. And if you wish for your identity to remain anonymous, please include a request for that in your email.</em></p>
+    <h3>Sources</h3>
+    <ol>
+      <li><a href="http://www.marxists.org/reference/archive/lin-biao/1965/09/peoples_war/" target="_blank">Long Live The Victory Of The People&rsquo;s War!</a> - MIA</li>
+      <li><a href="https://www.marxists.org/reference/archive/mao/selected-works/volume-1/mswv1_2.htm" target="_blank">Report On An Investigation Of The Peasant Movement In Hunan</a> - MIA</li>
+      <li><a href="http://www.ctvnews.ca/canada/report-to-show-aboriginal-prison-population-has-risen-to-23-per-cent-1.1184973" target="_blank">“Report To Show Aboriginal Prison Population Has Risen To <em>23%</em>”</a> -  CTV News</li>
+      <li><a href="http://thehoodup.com/board/viewtopic.php?t=43773#.U3wWLfldWM8" target="_blank">The Latin Kings-Queens Nation Manifesto</a></li>
+      <li><a href="http://www.huffingtonpost.ca/2014/04/23/aboriginal-early-death-toronto_n_5201404.html" target="_blank">&ldquo;Aboriginals In Toronto Dying At An Average Age Of <em>37</em>&rdquo;</a>- Huffington Canada</li>
+      <li><a href="https://www.cia.gov/library/publications/the-world-factbook/fields/2201.html" target="_blank">Total Renewable Water Resources</a> - CIA</li>
+      <li><a href="http://www.theglobeandmail.com/news/politics/canadian-aid-to-typhoon-hit-philippines-nears-40-million/article15487070/" target="_blank">“Canadian Typhoon Relief Nearing 40 Mil”</a> - The Globe &amp; Mail</li>
+      <li><a href="http://data.worldbank.org/indicator/MS.MIL.XPND.GD.ZS" target="_blank">Military Expenditure</a> - The World Bank</li>
+      <li><a href="http://www.world-nuclear.org/info/Country-Profiles/Countries-A-F/Canada--Uranium/" target="_blank">Uranium In Canada</a> - WNA</li>
+      <li><a href="http://water.org/water-crisis/water-facts/water/" target="_blank">The Water Crisis</a> - Water.ORG</li>
+    </ol>
+    <p><center>
+      <font size="1"><font face="Verdana">[ <a href="#top">Back To Top</a> ]</font></font>
+    </center></p>
+  </div>
+  <div class="sidebar2">
+    <h4>What's In This Issue?</h4>
+    <p><a href="#nat-libneedscom-revandviceversa">NATIONAL LIBERATION NEEDS COMMUNIST REVOLUTION, <em>&vv.</em></a></p>
+    <p><a href="#fromcountrysidetocity">FROM THE &ldquo;COUNTRYSIDE&rdquo; TO THE &ldquo;CITY&rdquo;</a>    </p>
+    <p><a href="#npa-revolutionfromphilippinestolosangeles">NEW PEOPLE’S ARMY: A REVOLUTION FROM THE PHILIPPINES TO LOS ANGELES</a></p>
+    <p><font size="1"><font face="Verdana">[<em> </em><a href="/weekly/pdf/issue2.pdf" target="_blank">DOWNLOAD</a> ]</font></font></p>
+  </div>
+  <!-- end .container --></div>
+</body>
+</html>

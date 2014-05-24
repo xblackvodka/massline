@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Links</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #ED3237;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	color: #000;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #42413C;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~this fixed width container surrounds the other divs~~ */
+.container {
+	width: 960px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	border: 1px;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background-color: #ED3237;
+	text-align: center;
+	font-size: 35px;
+	text-shadow: 1px 1px 2px #000;
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the left instead of the right, simply float these columns the opposite direction (all left instead of all right) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+.sidebar1 {
+	float: right;
+	width: 180px;
+	background-color: #FFFFCC;
+	padding-bottom: 10px;
+}
+.content {
+
+	padding: 10px 0;
+	width: 780px;
+	float: right;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+	background-color: #CCCCCC;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background-color: #FFFFCC;
+	color: #FFF;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #CCCCCC;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-shadow: 1px 1px 1px #666;
+	color: #FFF;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+body,td,th {
+	font-family: "Times New Roman", Times, serif;
+}
+.container .header p strong {
+	color: #FFF;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header">
+    <p><br />
+      <a href="../default.html"><img src="YellowHammer&amp;Sickle.png" width="223" height="223" /></a><!-- end .header --><br />    
+    <strong><em>Long Live Solidarity, Comradeship, UNITY</em></strong><br />
+    </p>
+  </div>
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="weekly.html"> Weekly </a></li>
+      <li><a href="quarterly.html"> Quarterly </a></li>
+      <li><a href="yearly.html"> Yearly </a></li>
+      <li><a href="poetry.html"> Poetry</a></li>
+    </ul>
+    <p><a href="weekly.html#statements">IPW Statements</a></p>
+    <p><strong>NICHES</strong> <br />
+      <a href="self-study.html">Study Notes<br />
+      </a><a href="left-survivalism.html">Left-Survivalism</a> <br />
+      <a href="maoisthandbook.html">The Maoist Handbook <br />
+      </a><a href="pdfcollection.html">The Maoist Library</a><br />
+      <a href="chatroom.html">Chatroom</a><br />
+      Links </p>
+  </div>
+  <div class="content">
+    <p>The following is a list of organizations, websites, political and economic lines, and leftist journals I support.</p>
+    <ul>
+      <li><strong>Indian People’s War, Filipino People’s War, Nepali People’s War - Global People’s War</strong></li>
+      <li><strong><a href="http://mimdown.wordpress.com/" target="_blank">MIM Down</a>:</strong> An informal group that furthered the theoretical work of the MIM.</li>
+      <li><strong><a href="http://prisoncensorship.info/index">Maoist Internationalist Ministry of Prisons</a>: </strong>An organization serving the masses of the prison-industrial complex. </li>
+      <li><strong><a href="http://ilps.info/index.php/en/about-us/who-are-we" target="_blank">International League Of People’s Struggle</a>:</strong> Anti-imperialist league serving the anti-imperialist struggle.</li>
+      <li><a href="http://propeopleyouth.com/" target="_blank"><strong>Pro-People Youth Of Los Angeles</strong></a><strong>:</strong> A revolutionary Filipino nationalist youth movement led by Buck Taylor.</li>
+      <li><strong><a href="http://www.signalfire.org/" target="_blank">SignalFire</a>:</strong> An informational waterpool of the Maoist movement in general. </li>
+      <li><strong><a href="http://revolutionaryaim.org/" target="_blank">Revolutionary Anti-Imperialist Movement</a>:</strong> The central Maoist Third-Worldist organization of today. </li>
+      <li><a href="http://raimd.wordpress.com/" target="_blank"><strong>RAIM Denver</strong></a><strong>, <a href="http://raims.wordpress.com/" target="_blank">RAIM Seattle</a></strong></li>
+      <li><strong><a href="http://anti-imperialism.com/">Anti-Imperialism</a>:</strong> (Third-Worldist) Analysis of struggles in the global north. </li>
+      <li><strong><a href="http://www.systemiccapital.com/" target="_blank">Systemic Capital</a>:</strong> (Third-Worldist) Analysis of struggles in the global south.</li>
+      <li><strong><a href="http://revolutionaryecology.com/" target="_blank">Revolutionary Ecology</a>:</strong> Environmentalism from a Maoist Third-Worldist perspective. </li>
+      <li><strong><a href="http://redcascadia.wordpress.com/" target="_blank">Revolutionary Cascadian Communist Movement</a>:</strong> The movement for an independent, socialist Cascadia!</li>
+      <li><strong><a href="http://weeklybolshevik.com/" target="_blank">The Weekly Bolshevik</a>:</strong> Revolutionary, anti-imperialist calendar of events in Occupied North AmeriKKKa. </li>
+      <li><strong><a href="http://spectreofcommunism.boards.net/" target="_blank">Spectre Of Communism</a>:</strong> Forum for Maoist Third-Worldist discussion. </li>
+      <li><strong><a href="https://twitter.com/MTWNewsWire" target="_blank">Maoism Thirld-Worldism News Wire</a>:</strong> Uniting all Third-Worldist revolutionary and national liberation struggles.</li>
+      <li><strong><a href="http://onkwehonwerising.wordpress.com/" target="_blank">Onkwehón:we Rising</a>:</strong> Indigenous perspective on Third-Worldism and revolution.</li>
+      <li><strong><a href="http://unsettlingamerica.wordpress.com/" target="_blank">Unsettling Amerika</a>:</strong> For decolonization, in theory and practice. </li>
+      <li><strong><a href="http://ancestralpride.ca/" target="_blank">Ancestral Pride</a>:</strong> For Indigeneous reoccupation of land and national independence. </li>
+      <li><strong><a href="http://warriorpublications.wordpress.com/" target="_blank">WARRIOR Publications</a>:</strong> Promoting the warrior spirit, and the culture of resistance.</li>
+      <li><strong><a href="http://oshkimaadziig.org/" target="_blank">Anishinabek Confederacy To Invoke Our Nationhood</a>:</strong> Spiritual and revolutionary Onkwehón:we nationalists.    </li>
+    </ul>
+    <ul>
+      <li><strong>New Afrikan Independence Movement</strong></li>
+      <li><a href="http://www.pg-rna.com/" target="_blank"><strong>Provisional Government Of The Republic Of New Afrika</strong></a><strong>:</strong> The government-in-exile of the New Afrikan nation. </li>
+      <li><strong>New Afrikan People’s Organization, New Afrikan Maoist Party, New Afrikan People’s Liberation Army</strong></li>
+      <li><strong><a href="http://www.uhurumovement.org/" target="_blank">Uhuru Movement</a>:</strong> The central website of the Afrikan People&rsquo;s Socialist Party. </li>
+      <li><strong><a href="http://thepeoplesvanguard.blogspot.ca/" target="_blank">The People&rsquo;s Vanguard</a>:</strong> An organization advancing the Black Power movement by building the culture of resistance.</li>
+      <li><strong><a href="http://2servethapeople.wix.com/brlp" target="_blank">New Generation  Black Panther Party For Self-Defence</a>:</strong> An organization advancing the Black Power movement.</li>
+      <li><strong><a href="http://pflp.ps/english/" target="_blank">Popular Front For The Liberation of Palestine</a>:</strong> The revolutionary Anti-Zionist movement for a socialist Palestine.    </li>
+    </ul>
+    <ul>
+      <li><strong><a href="http://socialistgunreview.wordpress.com/" target="_blank">The Socialist Gun Review</a>:</strong> An organization devoted to arming and training the revolutionary proletarian. </li>
+      <li><strong><a href="http://socialisteconomicbulletin.blogspot.co.uk/" target="_blank">Socialist Economic Bulletin</a>:</strong> A journal for (Third-Worldist) Marxist economic analysis.</li>
+      <li><strong><a href="http://kersplebedeb.com/" target="_blank">Kersplebedeb</a>:</strong> A manufacturer of radical (Third-Worldist) agitprop.</li>
+      <li><strong><a href="https://secure.leftwingbooks.net" target="_blank">Kersplebedeb - Left-Wing Books</a>:</strong> Radical (Thirld-Worldist) publishing house.</li>
+      <li><strong><a href="http://stephaniemcmillan.org/category/comic/affirmations/" target="_blank">Daily Affirmations For The Revolutionary Proletarian Militant</a>:</strong> For combating liberalism and building solidarity! </li>
+      <li><strong><a href="http://alyx.io/educational-resources/index.html" target="_blank">Index Of Educational Resources</a>:</strong> Info on class, race, gender, transgender, sexuality, disability, and more. </li>
+      <li><strong><a href="http://revolutionthenroses.wordpress.com/" target="_blank">Revolution, Then Roses</a>:</strong> A comrade&rsquo;s personal blog.    </li>
+    </ul>
+    <ul>
+      <li><strong><a href="https://shubelmorgan.wordpress.com" target="_blank">Shubel Morgan</a>:</strong> A prominent MTW. Once he joined LLCO, he ceased to be.</li>
+      <li><strong><a href="https://www.youtube.com/user/shubelmorgan" target="_blank">Shubel Morgan - YouTube Channel</a>:</strong> Videos made by Shubel Morgan.</li>
+    </ul>
+    <h2>Misc.</h2>
+    <ul>
+      <li><strong><a href="http://lib.freescienceengineering.org/" target="_blank">Library Genesis Project</a>:</strong> A massive fiction and non-fiction archive containing large volumes of Marxist theory.</li>
+      <li><strong><a href="http://beatrockmusic.bandcamp.com/" target="_blank">Beatrock Music</a>:</strong> Good struggle rap.</li>
+    </ul>
+  </div>
+  <div class="footer">
+    <hr width="80%" />
+    <p><strong>      Long Live Proletarian Internationalism! Long Live Marxism–Leninism–Maoism!<br />
+      Long Live Global People’s War and Global New Democratic Revolution!</strong></p>
+    <p><em><strong><img src="RedStar.png" width="100" height="97" /></strong></em></p>
+  </div>
+<!-- end .container --></div>
+</body>
+</html>
